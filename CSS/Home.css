@@ -1,0 +1,555 @@
+body{
+    background-image: linear-gradient(to left , #626262 , rgb(19, 19, 20));
+}
+nav{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 1%;
+    
+}
+nav .name-company{
+    width: 100%;
+    color: white;
+    font-size: 30px;
+    height: 100%;
+    text-align: center;
+}
+.name-company span{
+    color: chartreuse;
+}
+header{
+    background-image: linear-gradient(to left , #525050 ,#020202);
+    display: flex;
+    width: 100%;
+    height: 50px;
+    position: sticky;
+    top: 0px;
+    z-index: 100000;
+    border-radius: 15px;
+}
+header .logo{
+    width: 10%;
+    height: 100%;
+    color: white;
+    display: flex;
+}
+header .logo::after{
+    content: "";
+    background-color: chartreuse;
+    position: absolute;
+    width: 5px;
+    height: 35px;
+    left: 150px;
+    margin-top: 7px;
+    border-radius: 10px;
+}
+header .logo span{
+    color: chartreuse;
+}
+header .logo h1{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 8px;
+}
+header .pages{
+    width: 90%;
+    height: 100%;
+}
+header .pages ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+header .pages li{
+    transition: 0.5s;
+}
+header .pages a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    font-weight: bold
+}
+header .pages li:hover,.pages a:hover{
+    transform: scale(1.2);
+    color: chartreuse;
+}
+#selection{
+    transform: scale(1.2);
+    color: chartreuse;
+}
+/*Section*/
+section{
+    position: relative;
+    width: 100%;
+    height: 1000px;
+}
+section video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+section .intro{
+    position: absolute;
+    left: 30%;
+    top: 40%;
+}
+.intro h3 ,.intro h1{
+    color: white;
+    font-size: 50px;
+}
+.intro span{
+    color: chartreuse
+}
+section button {
+    padding: 0;
+    position: absolute;
+    left: 45%;
+    top: 70%;
+    width: 200;
+    height: 50;
+    border-radius: 15px;
+    font-size: 20px;
+    color: chartreuse;
+    transition: 0.5s;
+    opacity: 0.5;
+    background: none;
+    border: 6px ;
+    border-bottom-style: solid;
+}
+section button:hover{
+    transform: scale(1.2);
+    opacity: 1;
+}
+section button a{
+    color: chartreuse;
+    text-decoration: none;
+}
+.sections {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+}
+.sections span{
+    color: chartreuse;
+    font-size:50px;
+    height: 100%;
+    
+}
+.trainee{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: space-around;
+    border: 2px;
+   
+}
+.trainee .trainer {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.trainer img{
+    width: 100%;
+    height: 70%;
+}
+.trainer .name{
+    color: white;
+    width: 100%;
+    height: 9%;
+    text-align: center;
+    margin-top: 1%;
+    font-size: 30;
+    color: chartreuse
+}
+.trainer .rate{
+    display: flex;
+    width: 100%;
+    height: 10%;
+}
+.rate span{
+    width: 100%;
+    justify-content: center;
+    height: 100%;
+}
+.checked{
+  color: chartreuse;
+}
+.shop-section{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    background:rgba(0,0,1,0.3) url("../Images/back1.jpg");
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+        
+}
+.shop-section .items{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+}
+.items img{
+    width: 100%;
+    height: 60%;
+    border-radius: 30px;
+    margin-top: 2%;
+}
+.items span{
+    color:chartreuse;
+    font-size: 30px;
+    width: 98%;
+    height: 20%;
+    margin-left: 2%;
+}
+.items .price{
+    width: 98%;
+    height: 10%;
+    
+}
+.price span{
+    color: aliceblue;
+    font-size: 40px;
+}
+.price .offer{
+    text-decoration: line-through;
+}
+.items button{
+    width: 35%;
+    margin-left: 30%;
+    height: 40px;
+    color: chartreuse;
+    font-size: 25px;
+    border-radius: 15px;
+    background: none;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 9px;
+    border-bottom-style: solid;
+    
+}
+.items button:hover{
+    transform: scale(1.1);
+}
+.more{
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(to left , #525050 ,#020202);
+    margin-top: 0.5%;
+    border: 2px;
+    color: chartreuse;
+    border-bottom-style: solid;
+    border-radius: 10px;
+    
+}
+.more button{
+    margin-left: 45%;
+    height: 80%;
+    width: 10%;
+    background: none;
+    border: 5px;
+    border-radius: 15px;
+    border-bottom-style: solid;
+    cursor: pointer;
+    color: chartreuse;
+    border-top-style: solid;
+    transition: 0.5s;
+}
+.more a{
+    text-decoration: none;
+    color: chartreuse;
+    font-size: 20px;
+}
+.more button:hover{
+    transform: scale(1.1);
+}
+.about{
+    display: flex;
+    width: 100%;
+    background-color: black;
+    height: 350px;
+    
+}
+.about div{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border:1px;
+    border-left-style: solid;
+    color: chartreuse;
+    background:rgba(49, 47, 47, 0.9) url("../Images/back1.jpg");
+    background-position: center;
+    background-blend-mode: darken;
+}
+.about h1{
+    color: chartreuse;
+    justify-content: center;
+    margin-left: 15%;
+    font-weight: bold;
+}
+.about h2{
+    color: white;
+    margin-left: 15px;
+}
+.about span{
+    color: chartreuse;
+}
+footer{
+    background-color: black;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+footer .privacy{
+    height: 100%;
+    opacity: 0.5;
+    flex-direction: row-reverse;
+    width: 20%;
+    position: relative;
+}
+.privacy span{
+    color: white;
+    width: 95%;
+    margin-left: 5%;
+    height: 70%;
+    position: absolute;
+    margin-top: 2%;
+}
+footer .social{
+    width: 50%;
+    height: 100%;
+}
+.social ul{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+}
+.social ul li{
+    margin-top: 1%;
+    list-style: none;
+}
+.social img{
+    height: 70%;
+    width: 90%;
+    border-radius: 15px;
+}
+/* Healthy foods Page*/
+.days{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0,0,1,0.3);
+    border-radius: 15px;;
+}
+.days h1{
+    color: chartreuse;
+    font-size: 35px;
+}
+.day{
+    width: 100%;
+    height: 450px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(7, 7, 7, 0.89);    
+    border-radius: 15px;;
+}
+.day .food{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 3px;
+    color: chartreuse;
+    border-right-style: solid;
+    border-radius: 15px;
+}
+.food .time{
+    height: 10%;
+    color: chartreuse;
+}
+.time h1{
+    justify-content: center;
+    margin-left: 40%;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.food .image{
+    margin-top: 10%;
+    width: 100%;
+    height: 70%;
+    margin: 0;
+    padding: 0;
+}
+.image img{
+    height: 100%;
+    width: 95%;
+    border-radius: 15px;
+    margin-right: 5%;
+
+}
+.food span{
+    width: 100%;
+    color: chartreuse;
+    height: 10%;
+    font-size: 20px;
+}
+/* Login Page */
+.login {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 800px;
+}
+.login form{
+    margin-top: 5%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border-radius: 15px;
+    justify-content: space-around;
+    color: chartreuse;
+    padding: 0;
+    background:rgba(36, 31, 31, 0) url("../Images/back2.jpg");
+    background-position: center;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.login form .username ,.password{
+    display: flex;
+    padding: 0;
+    width: 90%;
+    flex-direction: column;
+    height: 20%;
+    margin-left: 10%;
+    
+}
+.username input , .password input{
+    width: 70%;
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0.77);
+    margin-left: 10%;
+    font-weight: bold;
+    color:chartreuse;
+    margin-top: 3%;
+    border-radius: 10px;
+    border:2px;
+    border-style: solid;
+}
+.login form .account {
+    height: 25%;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.61);
+    position: relative;
+}
+.account span{
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+.account a{
+    position: absolute;
+    font-size: 25px;
+    color: chartreuse;
+    top:50px;
+    left: 400px;
+}
+form span {
+    font-size: 25px
+}
+/* Fitness */
+
+.bar{
+    background: #070707;
+    display: block;
+    height: 6px;
+    border: 1px solid rgba(0,0,0,0.3);
+    overflow: hidden;
+    border-radius: 15px;
+}
+.bar span{
+    height: 6px;
+    float: left;
+    background: chartreuse;
+    border-radius: 15px;
+}
+.prec{
+    width: 2%;
+}
+.page1 {
+    width: 100%;
+    height: 150px;
+    z-index: 5555555;
+    align-content: center;  
+    margin-top: 5%;  
+}
+.page1 h1{
+    margin-left: 40%;
+    color: chartreuse;
+}
+.page1 h2{
+    margin-left: 42%;
+    color:white;
+}
+.title{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0%;
+    align-items: center;
+    height: 1000px;
+    justify-content: space-around;
+    
+}
+.title p{
+    color: white;
+    font-size: 30px;
+    justify-content: center;
+    font-weight: bold;
+}
+.title div{
+    display: inline-flex ;
+    background-color: rgba(0, 0, 0, 0.644);
+    justify-content: space-a;
+    width: 25%;
+    overflow: visible;
+    height: 25%;
+    border-radius: 15px;
+    justify-content: space-between;
+    position: relative;
+}
+.loss span{
+
+    width: 55%;
+    height: 100%;
+    max-height: 40%;
+    margin-top: 20%;
+    font-size: 30px;
+    color: white;
+    margin-left: 1%;
+    font-weight: bold;
+    margin-left: 8%;
+}
